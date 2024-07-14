@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./build/js", // 컴파일되는 Js 파일의 경로
+        "target": "ES6", // ES3 문법이 디폴트 값이라서 ES6로 지정해줘야 함.
+        "noEmitOnError": true, // 타입에 오류가 있을 시 js 파일로 컴파일이 되지않는 동시에 에러를 발생시킴
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "lib": ["ESNext", "DOM"],
+        "strict": true,
+        "strictNullChecks": false
+    },
+    "include": [
+        "./src/**/*.ts",
+    ]
+}

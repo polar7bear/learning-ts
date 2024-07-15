@@ -19,7 +19,7 @@ const post1: Post = {
 post1.getLikeNumber(1);
 
 
-// index signatrue
+// index signature
 
 interface Post2 {
     [key: string]: unknown;
@@ -34,3 +34,10 @@ const post2: Post2 = {
 
 post2['description'] = 'description 2';
 post2['pages'] = 225;
+
+// 배열 index signature
+
+interface Names {
+    [item: number]: string;
+}
+const userNames: Names = ['son', 'kim', 'choi'];
